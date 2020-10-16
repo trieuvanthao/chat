@@ -56831,6 +56831,7 @@ var app = new Vue({
     }
 
     if (userId != 'null') {
+      console.log('hihi');
       Echo.join('Online').here(function (users) {
         _this.onlineUsers = users;
       }).joining(function (user) {
@@ -56890,7 +56891,7 @@ window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
   key: "08e3cca80738fe0244a5",
   cluster: "ap1",
-  encrypted: false,
+  encrypted: true,
   enabledTransports: ['ws', 'wss']
 });
 

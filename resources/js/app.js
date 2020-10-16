@@ -46,6 +46,7 @@ const app = new Vue({
         }
 
         if (userId != 'null') {
+            console.log('hihi');
             Echo.join('Online')
                 .here((users) => {
                     this.onlineUsers = users;

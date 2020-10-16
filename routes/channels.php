@@ -11,6 +11,6 @@
 |
 */
 
-Broadcast::channel('chat-room.{user_id}.{friend_id}', function ($user, $userId, $friendId) {
+Broadcast::channel('Chat.{user_id}.{friend_id}', function ($user, $userId, $friendId) {
     return $user->id == $friendId;
 });
