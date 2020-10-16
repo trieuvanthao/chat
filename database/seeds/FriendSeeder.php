@@ -12,11 +12,13 @@ class FriendSeeder extends Seeder
     public function run()
     {
         $friend = new \App\Friend();
+        $friend->id = 1;
         $friend->user_id = 1;
         $friend->friend_id = 2;
         $friend->save();
 
         $friend1 = new \App\Friend();
+        $friend1->id = 2;
         $friend1->user_id = 2;
         $friend->friend_id = 1;
         $friend1->save();
